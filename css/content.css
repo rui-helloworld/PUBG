@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,
+html{
+    min-width: 1000px;
+    background: #161616;
+    font-family: "Source Han Sans CN", 'Teko', 'Oswald', sans-serif;
+}
+ul,li{
+list-style: none;
+}
+a{
+text-decoration : none;
+color: #adadad;
+}
+a:hover{
+text-decoration:underline;
+}
+.top{
+    position: relative;
+    height: 80px;
+    z-index: 10;
+}
+.top a:hover{
+    text-decoration:none;
+}
+.logo{
+    float: left;
+    width: 155px;
+    height: 80px;
+    background: url(../images/logo.png) no-repeat center 8px #252525;
+    position: relative;
+}
+.top-nav{
+    float: left;
+    height: 80px;
+}
+.top-nav li{
+    height: 80px;
+    margin-left: 40px;
+    position: relative;
+    float: left;
+    padding: 0 15px;
+}
+.top-nav li a{
+    display: inline-block;
+    line-height: 80px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.navigator-sub {
+    position: absolute;
+    top: 80px;
+    left: -50%;
+    transform: translate(-10%,0);
+    display: none;
+    opacity: 0;
+    transition: all 0.3s 0s ease-in-out;
+    background: #161616;
+    border-top: 2px solid #252525;
+    max-width: 200px;
+    min-width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-align: right;
+}
+.navigator-opt:hover .navigator-sub {
+    display: block;
+    opacity: 1;
+}
+.navigator-sub a {
+    display: block;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.icon-arrowdown {
+    font-size: 14px;
+    transform: rotate(90deg);
+    font-style: normal;
+    display: inline-block;
+}
+.top-nav li a:hover{
+    color: #fff;
+}
+.buynow-nav{
+    float: right;
+    height: 80px;
+}
+.buynow-nav li{
+    display: block;
+    width: 121px;
+    background: #f2a900;
+    height: 80px;
+    text-align: center;
+}
+.buynow-nav li a{
+    font-size: 16px;
+    color: #fff;
+    line-height: 80px;
+    font-weight: bold;
+}
+.buynow-nav li a .icon-arrowdown{
+    color: #fff;
+}
+
+
+
+
+
+
+.foot{
+    padding: 25px 45px 45px;
+    height: 200px;
+    /* color: #fff; */
+}
+.foot-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.media-list{
+    width: auto;
+    height: 32px;
+    float: left;
+}
+.media-list a {
+    display: inline-block;
+    height: 32px;
+    background-image: url(../images/flogo.jpg);
+    background-repeat: no-repeat;
+}
+.media-list a:hover{
+    background-position-y: -32px;
+}
+.media-list li{
+    float: left;
+}
+.flogo1 a{
+    background-position: 0 0;
+    width: 53px;
+}
+.flogo2 a{
+    background-position: -53px 0;
+    width: 72px;
+}
+.flogo3 a{
+    background-position: -135px 0;
+    width: 66px;
+}
+.flogo4 a{
+    background-position: -201px 0;
+    width: 48px;
+}
+.flogo5 a{
+    background-position: -249px 0;
+    width: 54px;
+}
+.flogo6 a{
+    background-position: -303px 0;
+    width: 52px;
+}
+.flogo7 a{
+    background-position: -355px 0;
+    width: 76px;
+}
+.flogo8 a{
+    background-position: -431px 0;
+    width: 53px;
+}
+.flogo9 a{
+    background-position: -484px 0;
+    width: 46px;
+}
+
+.foot-nav a{
+    font-family: 'Teko', 'Oswald', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+}
+
+.foot-info{
+    margin-top: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #707070;
+}
+.foot-info-split{
+    /* display: flex; */
+    height: auto;
+}
+.foot-info-logo{
+    width: 75px;
+    height: 65px;
+    float: left;
+}
+.foot-info-legal{
+    float: left;
+    padding: 0 20px;
+}
+.foot-info-rating{
+    float: right;
+}
+.foor-info-rating img{
+    display: block;
+}
+.foot-info-logo img{
+    display: block;
+}
+.foot-info-legal{
+    color: #707070;
+    font-size: 12px;
+}
+.foot-info-legal p:nth-child(2){
+    padding-top: 10px;
+}
+.foot-info-legal a:hover{
+    text-decoration:underline;
+    color: #fff;
+}
+.divided-nav{
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.divided-nav-list li{
+    float: left;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid currentColor;
+}
+.divided-nav-list li:first-child{
+    float: left;
+    margin-left: 0px;
+    padding-left: 0px;
+    border: 0px;
+}
